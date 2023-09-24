@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="prjGuIA.Views.VistaImagen"
+             Title="aaaa">
+    <StackLayout BackgroundColor="DarkCyan"  VerticalOptions="Center">
+        <Grid>
+            <Border StrokeShape="RoundRectangle 25, 25, 25, 25" StrokeThickness="0">
+            <Grid RowDefinitions=".7*, .3*">
+                <Image
+                    Grid.RowSpan="2"
+                    Aspect="AspectFill"
+                    Source="https://www.chichenitza.com/public/assets/img/ruins/el-castillo-chichen-itza.jpg"/>
+                <Grid Grid.Row="1">
+                    <Rectangle
+                        Fill="Black"
+                        Opacity=".5"
+                        StrokeThickness="0" />
+                    <VerticalStackLayout Margin="10, 0, 0, 0" VerticalOptions="Center">
+                        <Label
+                            x:Uid="lblNombre"
+                            FontFamily="NexaHeavy"
+                            FontSize="25"
+                            TextColor="White" />
+                        <Label
+                            x:Uid="lblPalabras"
+                            FontFamily="NexaLight"
+                            FontSize="15"
+                            TextColor="White" />
+                    </VerticalStackLayout>
+                </Grid>
+            </Grid>
+            </Border>
+        </Grid>
+    </StackLayout>
+</ContentPage>
